@@ -1,0 +1,6 @@
+<view>
+    <web-view s-if="src" src="{{src}}"></web-view>
+    <view class="tip">web-view是承载网页的容器</view>
+    <button type="primary" class="btn" bindtap="openWebViewInNewPage">新页面打开web-view</button>
+    <button type="primary" class="btn" bindtap="openWebViewCurrent">当前页打开web-view</button>
+</view>

@@ -1,0 +1,54 @@
+<view class="wrap">
+    <view class="mini-btn-content">
+        <view class="title">默认态</view>
+        <button type="primary" size="mini" class="mini-btn primary">
+            按钮
+        </button>
+        <button type="default" size="mini" class="mini-btn">按钮</button>
+        <button type="warn"    size="mini" class="mini-btn warn">
+            按钮
+        </button>
+    </view>
+
+    <view class="mini-btn-content">
+        <view class="title">禁用态</view>
+        <button type="primary" size="mini" class="mini-btn primary" disabled>
+            按钮
+        </button>
+        <button type="default" size="mini" class="mini-btn" disabled>
+            按钮
+        </button>
+        <button type="warn" size="mini" class="mini-btn warn" disabled>
+            按钮
+        </button>
+    </view>
+
+    <view class="btn-content">
+        <button type="primary" class="btn primary">
+            主操作按钮 默认态
+        </button>
+        <button type="primary" loading="true" class="btn primary">
+            主操作按钮 loading
+        </button>
+        <button type="primary" class="btn primary" disabled>
+            主操作按钮 禁用态
+        </button>
+        <button type="default" class="btn">
+            次要操作按钮 默认态
+        </button>
+        <button type="default" class="btn" disabled>
+            次要操作按钮 禁用态
+        </button>
+        <button type="warn" class="btn warn">
+            警告类操作按钮 默认态
+        </button>
+        <button type="warn" class="btn warn" disabled>
+            警告类操作按钮 禁用态
+        </button>
+    </view>
+
+    <view class="btn-bottom">
+        <button type="default" class="middle-btn">按钮</button>
+        <button type="default" class="middle-btn disabled">按钮</button>
+    </view>
+</view>

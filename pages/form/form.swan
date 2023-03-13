@@ -1,0 +1,34 @@
+<view class="wrap">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class="section">
+            <view class="section-title">switch</view>
+            <switch name="switch" checked/>
+        </view>
+        <view class="section">
+            <view class="section-title">radio</view>
+            <radio-group name="radio-group">
+                <label><radio value="radio1" checked/>选中</label>
+                <label class="label"><radio value="radio2"/>未选中</label>
+            </radio-group>
+        </view>
+        <view class="section section-gap">
+            <view class="section-title">checkbox</view>
+            <checkbox-group name="checkbox">               
+                <label><checkbox value="checkbox1" checked/>选项一</label>
+                <label class="label-checkbox"><checkbox  value="checkbox2"/>选项二</label>              
+            </checkbox-group>
+        </view>
+        <view class="section section-gap">
+            <view class="section-title">slider</view>
+            <slider name="slider" show-value ></slider>
+        </view>
+        <view class="section">
+            <view class="section-title">input</view>
+        </view>
+         <input name="input" placeholder="这是一个输入框" />
+        <view class="btn-area">
+            <button formType="submit" type="primary">Submit</button>
+            <button formType="reset">Reset</button>
+        </view>
+    </form>
+</view>

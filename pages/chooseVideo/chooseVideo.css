@@ -1,0 +1,56 @@
+body {
+    background: #fff;
+}
+
+.wrap {
+    padding-bottom: .69rem;
+}
+
+.video {
+    width: 100%;
+}
+
+.empty {
+    color: #666;
+    background: #fafafa;
+    line-height: 2.24rem;
+    text-align: center;
+    font-size: .15rem;
+}
+
+.option-area {
+    background: #fff;
+}
+
+.option {
+    font-size: .18rem;
+    line-height: .48rem;
+    display: flex;
+}
+
+.option:active {
+    background: #f2f2f2;
+}
+
+.option-area .border-bottom::after {
+    left: .17rem;
+    right: .17rem;
+    width: auto;
+}
+
+.option-title {
+    margin-left: .17rem;
+}
+
+.option-selection {
+    flex: 1;
+    padding-left: .35rem;
+}
+
+.button-area {
+    margin-top: .3rem;
+}
+
+.btn {
+    line-height: .44rem;
+}

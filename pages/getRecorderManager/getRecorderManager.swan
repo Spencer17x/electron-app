@@ -1,0 +1,30 @@
+<view class="wrap">
+    <view class="page-top">
+        <view class="page-top-text">start/stopRecord、play/stopVoice</view>
+        <view class="page-top-line"></view>
+    </view>
+    <view class="page-record">
+        <view class="page-time">
+            <view s-if="!isEnd">
+                <view s-if="nearFinish" class="record-tip finish-tip">即将超时</view>
+                <view s-else class="record-tip">支持60秒以内音频录制</view>
+            </view>
+            <view s-else style="height:0.35rem;"></view>
+            <view class="record-time {{nearFinish?'finish-tip':''}}">{{startTime}}</view>
+        </view>
+        <view class="page-status">
+            <view s-if="isEnd">
+                <view class="endtime">{{endTime}}</view>
+                <view class="page-finish">
+                    <view s-if="!isPlay" class="pause" bindtap="playRecord"></view>
+                    <view s-else class="play" bindtap="pauseRecord"></view>
+                    <view class="delete" bindtap="deleteRecord"></view>
+                </view>
+            </view>
+            <view s-else>
+                <view s-if="isRecord" class="btn-record" bindtap="stopRecord"></view>
+                <view s-else class="btn-start" bindtap="startRecord"></view>
+            </view>
+        </view>
+    </view>
+</view>

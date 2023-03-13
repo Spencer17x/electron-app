@@ -1,0 +1,22 @@
+<view class="container">
+    <view class="page-body">
+        <view class="page-dec">
+            当前位置信息
+        </view>
+        <view class="page-content">
+            <view s-if="location">
+                <view>{{msg}}}</view><br/>
+                <text class="page-font">E: {{location.longitude[0]}}°{{location.longitude[1]}}′ N: {{location.latitude[0]}}°{{location.latitude[1]}}′</text>
+            </view>
+            <view s-else>未获取位置</view>
+        </view>
+        <view class="page-btn">
+            <button bind:tap="chooseLocation" class="btn" type="primary" hover-stop-propagation="true">点击获取位置信息</button>
+            <button bind:tap="clearLocation">清空</button>
+        </view>
+    </view>
+    <view class="page-title">
+        <view class="page-title-line"></view>
+        <view class="page-title-text">{{title}}</view>
+    </view>
+</view>

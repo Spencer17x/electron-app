@@ -1,0 +1,24 @@
+/**
+ * @file swan index componentDemo's css
+ * @author rabbit77
+ */
+
+
+.animation-info {
+    padding-top: .4rem;
+}
+.controls {
+    width: 88%;
+    margin: 0 auto;
+}
+.button-content {
+    position: relative;
+    top: 0;
+}
+.toggle-animation {
+    margin-top: .22rem!important;
+    border-radius: .04rem;
+}
+.toggle-animation::after {
+    border: none;
+}

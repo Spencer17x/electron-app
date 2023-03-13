@@ -1,0 +1,76 @@
+/**
+ * @file swan index apiDemo's css
+ * @author renzhonghua
+ */
+html,
+body {
+    background: #fff;
+}
+
+.wrap {
+    padding-bottom: .69rem;
+}
+
+.image-container {
+    background: #fafafa;
+    height: 2.55rem;
+    padding: .25rem .51rem .22rem .54rem;
+    line-height: 0;
+}
+
+.image-items {
+    width: 32%;
+    height: 49%;
+    margin-right: .03rem;
+    margin-bottom: .03rem;
+    float: left;
+    display: block;
+}
+
+.empty {
+    color: #666;
+    background: #fafafa;
+    height: 2.55rem;
+    text-align: center;
+    font-size: .15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.option-area {
+    background: #fff;
+}
+
+.option {
+    font-size: .18rem;
+    line-height: .48rem;
+    display: flex;
+}
+
+.option:active {
+    background: #f2f2f2;
+}
+
+.option-area .border-bottom::after {
+    left: .17rem;
+    right: .17rem;
+    width: auto;
+}
+
+.option-title {
+    margin-left: .17rem;
+}
+
+.option-selection {
+    flex: 1;
+    padding-left: .35rem;
+}
+
+.button-area {
+    margin-top: .3rem;
+}
+
+.btn {
+    line-height: .44rem;
+}

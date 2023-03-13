@@ -1,0 +1,14 @@
+<view class="wrap">
+    <view class="image-area">
+        <view s-if="filePath" class="image-container">
+            <image class="image-items" src="{{filePath}}" mode="aspectFit" bindtap="previewImage"></image>
+        </view>
+        <view s-else class="empty">
+            <view>图片显示区</view>
+        </view>
+    </view>
+    <view class="button-area">
+        <button type="primary" bindtap="uploadFile">添加图片</button>
+        <button type="default" style="margin-top:0.15rem;" bindtap="clearImage">清空图片</button>
+    </view>
+</view>

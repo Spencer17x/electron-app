@@ -1,0 +1,17 @@
+<view class="wrap">
+    <view class="input-area">
+        <view class="input-item border-top border-bottom">
+            <label>key</label>
+            <input bind:input="keyInput" class="input" type="text" placeholder="请输入key"/>
+        </view>
+        <view class="input-item border-bottom">
+            <label>value</label>
+            <input bind:input="valueInput" class="input" type="text" placeholder="请输入value"/>
+        </view>
+    </view>
+    <view>
+        <button class="btn" bind:tap="setStorage" type="primary" hover-stop-propagation="true">存储数据</button>
+        <button class="btn" bind:tap="getStorage" hover-stop-propagation="true">读取数据</button>
+        <button class="btn" bind:tap="clearStorage" hover-stop-propagation="true">清理数据</button>    
+    </view>
+</view>

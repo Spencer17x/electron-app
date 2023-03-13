@@ -1,0 +1,33 @@
+/**
+ * @file swan index componentDemo's css
+ * @author rabbit77
+ */
+
+.content-title {
+    color: #999;
+    padding: 0 .3rem;
+    margin: .5rem 0 .1rem;
+}
+
+movable-area {
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: #ccc;
+    overflow: hidden;
+    margin: 0 0 .2rem .3rem;
+}
+
+movable-view {
+    width: .6rem;
+    height: .6rem;
+    background-color: #6895FF;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bigger-area {
+    width: 3rem;
+    height: 3rem;
+}

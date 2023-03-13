@@ -1,0 +1,43 @@
+.container{
+    background-color: white;
+}
+
+.page-body {
+    margin-top: .81rem;
+    padding: 0 .17rem;
+}
+
+.page-body .item {
+    height: .48rem;
+    display: flex;
+    font-size: .17rem;
+    color: #333;
+    border-top: 1px solid #E6E6E6;
+    overflow: hidden;
+}
+
+.item:nth-child(4) {
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.label {
+    flex: .28;
+    line-height: .48rem;
+    float: left;
+}
+
+.value {
+    flex: .72;
+    line-height: .48rem;
+    float: left;
+} 
+
+.button {
+    padding: 0;
+    margin: .3rem auto 0;
+    font-size: .17rem;
+}
+
+.button:after {
+    border: none;
+}

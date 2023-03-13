@@ -1,0 +1,120 @@
+
+.container {
+    background: #fff;
+}
+
+.page-body {
+    margin-top: 0;
+    background: #fff;
+}
+
+.image-area {
+    display: flex;
+    flex-direction: column;
+    height: 2.24rem;
+    background: #fafafa;
+    justify-content: center;
+}
+
+.img {
+    width: .43rem;
+    height: .43rem;
+    margin: 0 auto;
+}
+
+.upload-image {
+    margin-top: .21rem;
+    font-family: PingFangSC-Regular;
+    font-size: .15rem;
+    text-align: center;
+    letter-spacing: 0;
+    color: #666;
+}
+
+.tip {
+    margin-left: .23rem;
+    font-family: PingFangSC-Regular;
+    font-size: .16rem;
+    line-height: 54px;
+    letter-spacing: 0;
+    color: #999;
+}
+
+.result {
+    height: .84rem;
+    line-height: .27rem;
+    text-align: center;
+    background: #fafafa;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.default {
+    font-family: PingFangSC-Medium;
+    font-size: .27rem;
+    letter-spacing: 0;
+    color: #999;
+}
+
+.pass {
+    font-family: PingFangSC-Medium;
+    font-size: .27rem;
+    letter-spacing: 0;
+    color: #04aa61;
+}
+
+.fault {
+    font-family: PingFangSC-Medium;
+    font-size: .27rem;
+    letter-spacing: 0;
+    color: #f7534f;
+}
+
+.afterTest {
+    font-family: PingFangSC-Regular;
+    font-size: .16rem;
+    color: #999;
+}
+
+.illedalDetail {
+    padding-bottom: .29rem;
+    font-size: .16rem;
+    background: #fafafa;
+}
+
+.detailKey {
+    margin: .2rem .2rem;
+    font-family: PingFangSC-Regular;
+    font-size: .18rem;
+    color: #999;
+}
+.detailValue {
+    position: absolute;
+    left: 1.15rem;
+    margin-top: .03rem;
+}
+
+.detailValueName {
+    position: absolute;
+    left: 2.15rem;
+    margin-top: .03rem;
+}
+
+button {
+    margin-top: .2rem;
+}
+
+swan-textarea {
+    width: auto;
+}
+
+.page-title {
+    margin: 1rem 0 0 0;
+    text-align: center;
+}
+
+.page-title-text {
+    font-size: .16rem;
+    padding-bottom: .23rem;
+}

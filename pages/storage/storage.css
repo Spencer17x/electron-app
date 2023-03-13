@@ -1,0 +1,41 @@
+/**
+ * @file swan index apiDemo's css
+ * @author renzhonghua
+ */
+html,
+body {
+    background: #fff;
+}
+
+.wrap {
+    font-size: .16rem;
+}
+
+.input-area {
+    margin: .38rem 0;
+    padding: 0 .17rem;
+}
+
+.input-item {
+    height: .48rem;
+    display: flex;
+}
+
+.input-item label {
+    font-size: .18rem;
+    color: #333;
+    width: .6rem;
+    display: block;
+    line-height: .48rem;
+}
+
+.input-item input {
+    flex: 1;
+    height: .48rem;
+    line-height: .48rem;
+}
+
+.btn {
+    line-height: .44rem;
+    margin-bottom: .16rem;
+}

@@ -1,0 +1,45 @@
+/**
+ * @file swan index apiDemo's css
+ * @author renzhonghua
+ */
+body {
+    background: #fff;
+}
+
+.wrap {
+    font-size: .16rem;
+}
+
+.file-area {
+    height: 2.24rem;
+    text-align: center;
+    color: #666;
+    background: #fafafa;
+}
+
+.file-icon {
+    width: .62rem;
+    margin-top: .6rem;
+}
+
+.save-success-icon {
+    width: .13rem;
+    height: .09rem;
+}
+
+.file-label {
+    margin-top: .14rem;
+}
+
+.file-save {
+    margin-top: .07rem;
+}
+
+.button-area {
+    margin-top: .3rem;
+}
+
+.btn {
+    line-height: .44rem;
+    margin-bottom: .16rem;
+}
