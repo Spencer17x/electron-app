@@ -6,7 +6,7 @@ import cmd from 'node-cmd'
 import * as path from 'path'
 import compressing from 'compressing'
 
-const pageURL = 'http://localhost:5173'
+// const pageURL = 'http://localhost:5173'
 
 function createWindow(): void {
   // Create the browser window.
@@ -36,7 +36,7 @@ function createWindow(): void {
   if (is.dev && process.env['ELECTRON_RENDERER_URL']) {
     mainWindow.loadURL(process.env['ELECTRON_RENDERER_URL'])
   } else {
-    mainWindow.loadURL(pageURL)
+    mainWindow.loadFile(path.join(__dirname, '../renderer/index.html'))
   }
 
   ipcMain.on('open-editor', (_, info) => {
@@ -73,24 +73,17 @@ function createWindow(): void {
     })
   })
 
-  const map = {}
-  session.defaultSession.cookies.flushStore()
-  session.defaultSession.cookies.on('changed', (_, cookie, _1, _2) => {
-    console.log('cookie changed', cookie)
-    if (!cookie.expirationDate && cookie.expirationDate !== map[cookie.name]) {
-      session.defaultSession.cookies.set({
-        url: pageURL,
-        name: cookie.name,
-        value: cookie.value,
-        domain: cookie.domain,
-        path: cookie.path,
-        secure: cookie.secure,
-        httpOnly: cookie.httpOnly,
-        sameSite: cookie.sameSite,
-        expirationDate: Math.floor(Date.now() / 1000) + 60 * 60 * 24 * 30
-      })
-    }
-  })
+  // session.defaultSession.cookies.on('changed', (_, cookie, _1, _2) => {
+  //   console.log('cookie changed', cookie)
+  //   if (cookie.session) {
+  //     session.defaultSession.cookies.set({
+  //       url: pageURL,
+  //       name: cookie.name,
+  //       value: cookie.value,
+  //       expirationDate: 1713263686
+  //     })
+  //   }
+  // })
 }
 
 // This method will be called when Electron has finished
